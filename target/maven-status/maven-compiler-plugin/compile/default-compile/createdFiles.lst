@@ -1,0 +1,15 @@
+com\capgemini\MovieService\dao\MovieDAO.class
+com\capgemini\MovieService\services\MovieService.class
+com\capgemini\MovieService\controllers\MovieController.class
+com\capgemini\MovieService\exceptions\CityNotFoundException.class
+com\capgemini\MovieService\entities\Movie.class
+com\capgemini\MovieService\exceptions\ScreenNotFoundException.class
+com\capgemini\MovieService\exceptions\TheaterNotFoundException.class
+META-INF\spring-configuration-metadata.json
+com\capgemini\MovieService\exceptions\GlobalExceptionHandler.class
+com\capgemini\MovieService\beans\Dimension.class
+com\capgemini\MovieService\configuration\DynamoDBConfig.class
+com\capgemini\MovieService\MovieApplication.class
+com\capgemini\MovieService\controllers\TestController.class
+com\capgemini\MovieService\beans\ErrorResponse.class
+com\capgemini\MovieService\exceptions\MovieNotFoundException.class
