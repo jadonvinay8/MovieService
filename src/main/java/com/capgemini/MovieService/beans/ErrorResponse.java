@@ -4,16 +4,16 @@ public class ErrorResponse {
 
 	private String errorMsg;
 	private String code;
+	private String cause;
 	
 	public ErrorResponse() {
-		super();
 		// Default Constructor
 	}
 
-	public ErrorResponse(String errorMsg, String code) {
-		super();
+	public ErrorResponse(String errorMsg, String code, String cause) {
 		this.errorMsg = errorMsg;
 		this.code = code;
+		this.cause = cause;
 	}
 
 	public String getErrorMsg() {
@@ -32,5 +32,12 @@ public class ErrorResponse {
 		this.code = code;
 	}
 
-	
+	public String getCause() {
+		return cause;
+	}
+
+	public void setCause(String cause) {
+		this.cause = cause;
+	}
+
 }

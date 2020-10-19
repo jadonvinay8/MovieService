@@ -1,0 +1,46 @@
+[
+  {
+    "name": "The Matrix",
+    "genre": "Suspense Thriller",
+    "duration": "1.8 hrs",
+    "movieDimension": "_3D",
+    "rating": 9.5,
+    "dateReleased": "2000-06-26",
+    "casts": [],
+    "languages": [
+      "English"
+    ]
+  },
+  {
+    "name": "Jab tak hai jaan",
+    "genre": "Romance",
+    "duration": "2.1 hrs",
+    "movieDimension": "_2D",
+    "rating": 9.1,
+    "dateReleased": "2011-12-28",
+    "casts": [
+      "Shahrukh Khan",
+      "Katrina Kaif",
+      "Anushka Sharma"
+    ],
+    "languages": [
+      "Hindi",
+      "English"
+    ]
+  },
+  {
+    "name": "Om Shanti Om",
+    "genre": "Romance/ Suspense",
+    "duration": "3 hrs",
+    "movieDimension": "_3D",
+    "rating": 9.5,
+    "dateReleased": "2007-06-25",
+    "casts": [
+      "Shahrukh Khan",
+      "Deepika Padukone"
+    ],
+    "languages": [
+      "Hindi"
+    ]
+  }
+]

@@ -2,6 +2,7 @@ package com.capgemini.MovieService.entities;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.*;
 import org.hibernate.validator.constraints.UniqueElements;
@@ -144,5 +145,24 @@ public class Movie {
     @DynamoDBAttribute
     public void setRating(Double rating) {
         this.rating = rating;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Movie movie = (Movie) o;
+        return Objects.equals(movieId, movie.movieId) &&
+                Objects.equals(name, movie.name) &&
+                Objects.equals(genre, movie.genre) &&
+                Objects.equals(duration, movie.duration) &&
+                movieDimension == movie.movieDimension &&
+                Objects.equals(rating, movie.rating) &&
+                Objects.equals(dateReleased, movie.dateReleased);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(movieId, name, genre, duration, movieDimension, rating, dateReleased);
     }
 }

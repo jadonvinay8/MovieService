@@ -30,7 +30,6 @@ public class MovieService {
         this.movieDAO = movieDAO;
     }
 
-
     public Movie findById(String id) {
         return movieDAO.findById(id).orElseThrow(MovieNotFoundException::new);
     }
@@ -63,6 +62,12 @@ public class MovieService {
                 .collect(Collectors.toList());
 
         movieDAO.saveAll(filteredMovies);
+    }
+
+    public Set<Movie> getMoviesByIds(Set<String> movieIds) {
+        return findAll().stream()
+                .filter(movie -> movieIds.contains(movie.getMovieId()))
+                .collect(Collectors.toSet());
     }
 
     public List<Movie> getLatestMovies() {

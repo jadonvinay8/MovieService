@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping("v1/movies")
@@ -31,6 +32,11 @@ public class MovieController {
 	@GetMapping("latest")
 	public ResponseEntity<List<Movie>> getLatestMovies() {
 		return new ResponseEntity<>(movieService.getLatestMovies(), HttpStatus.OK);
+	}
+
+	@PostMapping("findByIds")
+	public ResponseEntity<Set<Movie>> getMoviesByIds(@RequestBody Set<String> movieIds) {
+		return new ResponseEntity<>(movieService.getMoviesByIds(movieIds), HttpStatus.OK);
 	}
 
 	@PostMapping

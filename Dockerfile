@@ -1,4 +1,4 @@
 FROM openjdk:11
-ADD target/AdminAPI-0.0.1-SNAPSHOT.jar admin-api.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "admin-api.jar"]
+ADD target/MovieAPI-0.0.1-SNAPSHOT.jar movie-api.jar
+EXPOSE 8082
+ENTRYPOINT ["java", "-jar", "movie-api.jar"]
