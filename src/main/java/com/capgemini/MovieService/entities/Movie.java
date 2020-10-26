@@ -5,11 +5,9 @@ import java.util.List;
 import java.util.Objects;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.*;
-import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.validation.constraints.*;
-//import com.capgemini.MovieService.beans.Dimension;
-//import com.capgemini.MovieService.beans.EnumConverter;
+
 
 @DynamoDBTable(tableName = "Movie")
 public class Movie {
@@ -47,7 +45,7 @@ public class Movie {
         // Default Constructor
     }
 
-    public static enum Dimension {
+    public enum Dimension {
         _2D, _3D
     }
 
