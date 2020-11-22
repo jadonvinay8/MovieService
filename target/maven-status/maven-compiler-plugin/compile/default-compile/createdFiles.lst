@@ -2,6 +2,7 @@ com\capgemini\MovieService\dao\MovieDAO.class
 com\capgemini\MovieService\services\MovieService.class
 com\capgemini\MovieService\controllers\MovieController.class
 com\capgemini\MovieService\entities\Movie.class
+com\capgemini\MovieService\configuration\SpringFoxConfig.class
 META-INF\spring-configuration-metadata.json
 com\capgemini\MovieService\exceptions\GlobalExceptionHandler.class
 com\capgemini\MovieService\configuration\DynamoDBConfig.class

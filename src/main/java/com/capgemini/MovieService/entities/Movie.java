@@ -146,6 +146,21 @@ public class Movie {
     }
 
     @Override
+    public String toString() {
+        return "Movie{" +
+          "movieId='" + movieId + '\'' +
+          ", name='" + name + '\'' +
+          ", genre='" + genre + '\'' +
+          ", duration='" + duration + '\'' +
+          ", movieDimension=" + movieDimension +
+          ", rating=" + rating +
+          ", dateReleased=" + dateReleased +
+          ", casts=" + casts +
+          ", languages=" + languages +
+          '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

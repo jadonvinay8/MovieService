@@ -6,5 +6,6 @@ D:\Programming\Individual Microservices\Movie API\master\09.24.2020\MovieAPI\src
 D:\Programming\Individual Microservices\Movie API\master\09.24.2020\MovieAPI\src\main\java\com\capgemini\MovieService\controllers\TestController.java
 D:\Programming\Individual Microservices\Movie API\master\09.24.2020\MovieAPI\src\main\java\com\capgemini\MovieService\services\MovieService.java
 D:\Programming\Individual Microservices\Movie API\master\09.24.2020\MovieAPI\src\main\java\com\capgemini\MovieService\exceptions\GlobalExceptionHandler.java
+D:\Programming\Individual Microservices\Movie API\master\09.24.2020\MovieAPI\src\main\java\com\capgemini\MovieService\configuration\SpringFoxConfig.java
 D:\Programming\Individual Microservices\Movie API\master\09.24.2020\MovieAPI\src\main\java\com\capgemini\MovieService\exceptions\MovieNotFoundException.java
 D:\Programming\Individual Microservices\Movie API\master\09.24.2020\MovieAPI\src\main\java\com\capgemini\MovieService\dao\MovieDAO.java
