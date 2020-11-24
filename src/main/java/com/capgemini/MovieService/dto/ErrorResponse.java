@@ -1,4 +1,4 @@
-package com.capgemini.MovieService.beans;
+package com.capgemini.MovieService.dto;
 
 public class ErrorResponse {
 
