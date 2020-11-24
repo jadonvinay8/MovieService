@@ -51,6 +51,7 @@ public class MovieServiceImpl implements MovieService{
 
     public Movie updateMovie(String id, Movie movie) {
         findById(id); // if this movie didn't exist previously, an exception will be thrown
+        movie.setMovieId(id);
         return movieDAO.save(movie);
     }
 

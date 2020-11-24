@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 public interface MovieService {
+
     List<Movie> findAll();
 
     List<Movie> getLatestMovies();
