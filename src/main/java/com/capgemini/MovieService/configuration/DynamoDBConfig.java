@@ -11,8 +11,8 @@ import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 
-@Configuration
-@EnableDynamoDBRepositories(basePackages = "com.capgemini.MovieService")
+//@Configuration
+//@EnableDynamoDBRepositories(basePackages = "com.capgemini.MovieService")
 public class DynamoDBConfig {
 
     @Value("${amazon.dynamodb.endpoint}")
@@ -34,7 +34,7 @@ public class DynamoDBConfig {
         return amazonDynamoDB;
     }
 
-    @Bean
+//    @Bean
     public AWSCredentials amazonAWSCredentials() {
         return new BasicAWSCredentials(amazonAWSAccessKey, amazonAWSSecretKey);
     }
